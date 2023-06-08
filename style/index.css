@@ -1,0 +1,302 @@
+body {
+    margin: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: gainsboro;
+}
+
+
+@media only screen and (max-width: 600px) {
+    #main-header {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+    }
+    
+    #header-left {
+        width: 45%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+    
+    #shop-title {
+        font-size: 1rem;
+        color: black;
+        font-weight: bolder;
+        font-style: italic;
+    }
+    
+    #header-middle {
+        width: 10%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #main-logo {
+        width: 50px;
+        aspect-ratio: 1 / 1;
+    }
+    
+    #header-right {
+        width: 45%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 20px;
+        box-sizing: border-box;
+        padding: 20px;
+        padding-right: 40px;
+    }
+
+    .image-link {
+        display: block;
+    }
+
+    #mobile-nav {
+        width: 30px;
+        aspect-ratio: 1 / 1;
+    }
+    
+    .link {
+        display: none;
+    }
+
+    #mobile-menu-closed {
+        position: fixed;
+        top: 0px;
+        width: 0px;
+        height: 100%;
+        background-color: rgb(255, 0, 0);
+        transition: all 0.5s;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #mobile-menu-open {
+        position: fixed;
+        overflow: hidden;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(255, 0, 0);
+        transition: all 0.5s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #mobile-menu-closed > img {
+        width: 50px;
+        aspect-ratio: 1/1;
+    }
+
+    #mobile-menu-open > img {
+        width: 50px;
+        aspect-ratio: 1/1;
+    }
+
+    .linkm {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        font-size: 10vw;
+        transition: all 0.2s;
+        margin-top: 15px;
+    }
+    
+    .linkm:hover {
+        color: rgb(255, 255, 255);
+    }
+
+    #banner {
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        padding: 10px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #banner > p {
+        text-align: center;
+        font-weight: bold;
+        font-style: italic;
+        font-size: 6vw;
+    }
+
+    #categories {
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        border: 2px solid transparent;
+    }
+
+    .category {
+        width: 40%;
+        aspect-ratio: 1/0.5;
+        background-color: red;
+        transform: skew(-10deg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .category > p {
+        font-size: 5vw;
+        color: white;
+        font-weight: bold;
+    }
+    .category:hover {
+        cursor: pointer;
+        border: 2px solid black;
+    }
+}
+
+@media only screen and (min-width: 601px)    {
+    #main-header {
+        width: 100%;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+    }
+    
+    #header-left {
+        width: 45%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+    
+    #shop-title {
+        font-size: 20px;
+        color: black;
+        font-weight: bolder;
+        font-style: italic;
+    }
+    
+    #header-middle {
+        width: 10%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #main-logo {
+        width: 50px;
+        aspect-ratio: 1 / 1;
+    }
+    
+    #header-right {
+        width: 45%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 20px;
+        box-sizing: border-box;
+        padding: 20px;
+        padding-right: 40px;
+    }
+
+    #mobile-nav {
+        display: none;
+    }
+    
+    .link {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        transition: all 0.2s;
+    }
+    
+    .link:hover {
+        color: red;
+    }
+
+    #mobile-menu-closed {
+        display: none;
+    }
+
+    #mobile-menu-open {
+        display: none;
+    }
+
+    #banner {
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        padding: 30px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #banner > p {
+        font-weight: bold;
+        font-style: italic;
+        font-size: 50px;
+    }
+
+    #categories {
+        width: 70%;
+        height: auto;
+        box-sizing: border-box;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .category {
+        width: 150px;
+        height: 70px;
+        background-color: red;
+        transform: skew(-10deg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid transparent;
+    }
+
+    .category > p {
+        font-size: 20px;
+        color: white;
+        font-weight: bold;
+    }
+    .category:hover {
+        cursor: pointer;
+        border: 2px solid black;
+    }
+}
