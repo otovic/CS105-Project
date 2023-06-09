@@ -1,0 +1,152 @@
+@media only screen and (max-width: 600px) {
+    #products {
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        padding: 4vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 4vw;
+    }
+
+    .product {
+        width: 45%;
+        aspect-ratio: 1/1.5;
+        background-color: rgb(255, 255, 255);
+        position: relative;
+        border: 2px solid transparent;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+
+    .product:hover {
+        border: 2px solid black;
+    }
+
+    .product-image {
+        width: 100%;
+        aspect-ratio: 1/1.2;
+    }
+
+    .product-image > img {
+        width: 100%;
+        aspect-ratio: 1/1.2;
+    }
+
+    .product-info {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .product-info > p {
+        margin: 0px;
+        margin-top: 10px;
+        font-size: 4vw;
+    }
+}
+
+@media only screen and (min-width: 601px)    {
+    #products {
+        width: 80%;
+        height: auto;
+        box-sizing: border-box;
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .product {
+        width: 300px;
+        aspect-ratio: 1/1.5;
+        background-color: rgb(255, 255, 255);
+        position: relative;
+        border: 2px solid transparent;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+
+    .product:hover {
+        border: 2px solid black;
+    }
+
+    .product-image {
+        width: 100%;
+        aspect-ratio: 1/1.2;
+    }
+
+    .product-image > img {
+        width: 100%;
+        aspect-ratio: 1/1.2;
+    }
+
+    .product-info {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .product-info > p {
+        margin: 0px;
+        margin-top: 10px;
+    }
+}
+
+.product:hover > #rot1 {
+    transform: rotate(180deg);
+}
+
+.product:hover > #rot2 {
+    transform: rotate(-180deg);
+}
+
+.product:hover > #rot3 {
+    transform: rotate(-180deg);
+}
+
+.product:hover > #rot4 {
+    transform: rotate(180deg);
+}
+
+#rot1 {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    transition: all 0.5s;
+}
+
+#rot2 {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    transition: all 0.5s;
+}
+
+#rot3 {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    transition: all 0.5s;
+}
+#rot4 {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    transition: all 0.5s;
+}
+
+.rot > img {
+    width: 15px;
+    aspect-ratio: 1/1;
+}

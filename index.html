@@ -2,10 +2,13 @@
     <head>
         <title>Ottoshop Prodavnica</title>
         <link rel="stylesheet" type="text/css" href="style/index.css">
+        <link rel="stylesheet" type="text/css" href="style/product.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="toggle-menu.js"></script>
+        <script src="header.js"></script>
+        <script src="products.js"></script>
     </head>
-    <body>
+    <body onload="addStickyListener();readProducts();">
         <div id="mobile-menu-closed">
             <img src="images/x.png" onclick="toggleMenu()">
             <a href="#" class="linkm">MUSKARCI</a>
@@ -42,6 +45,13 @@
                     <p>TRENERKE</p>
                 </div>
             </div>
+        </div>
+        <div id="content">
+            <div id="products">
+
+            </div>
+        </div>
+        <div id="footer">
         </div>
     </body>
 </html>
