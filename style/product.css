@@ -23,6 +23,7 @@
 
     .product:hover {
         border: 2px solid black;
+        cursor: pointer;
     }
 
     .product-image {
@@ -72,10 +73,13 @@
         border: 2px solid transparent;
         box-sizing: border-box;
         padding: 20px;
+        transition: all 0.3s;
     }
 
     .product:hover {
         border: 2px solid black;
+        cursor: pointer;
+        transform: scale(1.1);
     }
 
     .product-image {

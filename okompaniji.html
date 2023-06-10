@@ -3,17 +3,15 @@
 <head>
     <title>Ottoshop Prodavnica</title>
     <link rel="stylesheet" type="text/css" href="style/index.css">
-    <link rel="stylesheet" type="text/css" href="style/product.css">
     <link rel="stylesheet" type="text/css" href="style/footer.css">
-    <link rel="stylesheet" type="text/css" href="style/loader.css">
+    <link rel="stylesheet" type="text/css" href="style/companyinfo.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="toggle-menu.js"></script>
     <script src="header.js"></script>
     <script src="products.js"></script>
-    <script src="initial-setup.js"></script>
 </head>
 
-<body onload="addStickyListener();readProducts();setInitialValues();">
+<body onload="addStickyListener();">
     <div id="mobile-menu-closed">
         <img src="images/x.png" onclick="toggleMenu()">
         <a href="#" class="linkm">MUSKARCI</a>
@@ -35,7 +33,7 @@
         </div>
     </header>
     <div id="banner">
-        <p>PROIZVEDENO U SRBIJI</p>
+        <p>O KOMPANIJI</p>
         <div id="categories">
             <a href="index.html">
                 <div class="category">
@@ -70,12 +68,22 @@
         </div>
     </div>
     <div id="content">
-        <div id="products">
-            <div id="loader-container">
-                <div id="loader">
-
-                </div>
+        <div id="content-container">
+            <div id="headquarters">
+                <p>SEDISTE FIRME - NIS, SRBIJA</p>
+                <img src="images/hq.jpg">
             </div>
+            <p>Predstavljamo vam "Eleganta Moda", inovativnu modnu kuću koja je sinonim za kreativnost, kvalitet i beskrajne mogućnosti stila. Naša firma je posvećena stvaranju izuzetne odeće koja inspiriše samopouzdanje i ističe individualnost svake osobe koja je nosi.
+
+                U srcu našeg procesa dizajna je tim strastvenih i talentovanih kreativaca koji prepliću tradicionalne i moderne elemente da bi stvorili neverovatne komade odeće. Kroz beskrajne eksperimente s tkaninama, bojama i detaljima, svaki komad odeće koji izlazi iz naše fabrike je jedinstveni umetnički izraz.
+                
+                Naša kolekcija obuhvata sve, od elegantnih haljina i odeljaka za poslovni svet do ležernih komada za svakodnevne avanture. Bez obzira da li želite da izrazite sofisticiranu eleganciju ili da prikažete hrabrost i smelost, Eleganta Moda ima pravu odeću za vas.
+                
+                Ponosni smo na visok standard kvaliteta koji postavljamo za naše proizvode. Svaki komad odeće je pažljivo izrađen s najkvalitetnijim tkaninama i stručnim rukama naših majstora krojača. Naša posvećenost izvrsnosti rezultira odećom koja je udobna za nošenje, dugotrajna i koja zadržava svoj oblik i sjaj i nakon mnogih pranja.
+                
+                Eleganta Moda takođe neguje održivu modu. Svesni smo važnosti čuvanja naše planete, pa pažljivo biramo materijale koji su ekološki prihvatljivi i podržavamo fer trgovinu. Naša vizija je stvoriti odeću koja ne samo da izgleda dobro, već i čini dobro za svet oko nas.
+                
+                Kao firma koja proizvodi odeću, Eleganta Moda prepoznaje da je moda više od samog oblačenja - to je način izražavanja, umetnost i način života. Uzbuđeni smo što vam pružamo mogućnost da otkrijete svoj stil uz naše jedinstvene kreacije. Dobrodošli u svet Elegante Mode, gde ćemo zajedno izgraditi nezaboravne modne priče.</p>
         </div>
     </div>
     <div id="footer">
