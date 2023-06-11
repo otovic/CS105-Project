@@ -1,0 +1,134 @@
+<html>
+
+<head>
+    <title>Ottoshop Prodavnica</title>
+    <link rel="stylesheet" type="text/css" href="style/index.css">
+    <link rel="stylesheet" type="text/css" href="style/product.css">
+    <link rel="stylesheet" type="text/css" href="style/footer.css">
+    <link rel="stylesheet" type="text/css" href="style/loader.css">
+    <link rel="stylesheet" type="text/css" href="style/ourteam.css">
+    <link rel="stylesheet" type="text/css" href="style/delatnost.css">
+    <link rel="stylesheet" type="text/css" href="style/kontakt.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="toggle-menu.js"></script>
+    <script src="header.js"></script>
+    <script src="products.js"></script>
+    <script src="initial-setup.js"></script>
+    <script src="employee.js"></script>
+    <script src="kontakt.js"></script>
+</head>
+
+<body onload="addStickyListener();">
+    <div id="mobile-menu-closed">
+        <img src="images/x.png" onclick="toggleMenu()">
+        <a href="#" class="linkm">MUSKARCI</a>
+        <a href="#" class="linkm">ZENE</a>
+        <a href="#" class="linkm">DECA</a>
+    </div>
+    <header id="main-header">
+        <div id="header-left">
+            <p id="shop-title">OTTOSHOP</p>
+        </div>
+        <div id="header-middle">
+            <img src="images/logo.png" id="main-logo">
+        </div>
+        <div id="header-right">
+            <a href="#" class="link">MUSKARCI</a>
+            <a href="#" class="link">ZENE</a>
+            <a href="#" class="link">DECA</a>
+            <img src="images/menu.png" id="mobile-nav" onclick="toggleMenu()">
+        </div>
+    </header>
+    <div id="banner">
+        <p>KONTAKT</p>
+        <div id="categories">
+            <a href="index.html">
+                <div class="category">
+                    <p>POCETNA</p>
+                </div>
+            </a>
+            <a href="okompaniji.html">
+                <div class="category">
+                    <p>O KOMPANIJI</p>
+                </div>
+            </a>
+            <a href="nastim.html">
+                <div class="category">
+                    <p>NAS TIM</p>
+                </div>
+            </a>
+            <a href="delatnost.html">
+                <div class="category">
+                    <p>DELATNOST</p>
+                </div>
+            </a>
+            <a href="kontakt.html">
+                <div class="category">
+                    <p>KONTAKT</p>
+                </div>
+            </a>
+            <a href="demo.html">
+                <div class="category">
+                    <p>DEMO</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div id="content">
+        <div id="content-container">
+            <div id="form-container">
+                <label class="frm-lbl">Ime:</label>
+                <input type="text" id="namefld" class="frm-input">
+                <div style="margin-top: 20px;"></div>
+
+                <label class="frm-lbl">Prezime:</label>
+                <input type="text" id="surnamefld" class="frm-input">
+                <div style="margin-top: 20px;"></div>
+
+                <label class="frm-lbl">Naslov poruke:</label>
+                <input type="text" class="frm-input">
+                <div style="margin-top: 20px;"></div>
+
+                <label class="frm-lbl">Sadrzaj poruke:</label>
+                <textarea id="txt-area"></textarea>
+                <div style="margin-top: 20px;"></div>
+
+                <label class="frm-lbl">Broj telefona:</label>
+                <input type="text" class="frm-input">
+                <div style="margin-top: 20px;"></div>
+
+                <label class="frm-lbl">Tip poruke:</label>
+                <select name="tipporuke" id="tip">
+                    <option value="volvo">SMS</option>
+                    <option value="volvo">MMS</option>
+                </select>
+                <div style="margin-top: 20px;"></div>
+                
+                <button id="predajporuku" onclick="submitValues()">POSALJI</button>
+            </div>
+            <div id="message-container">
+                <h1>NEMA UNETIH PORUKA</h1>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="footer-message">
+            <p>SVE STO MOZETE DA ZAMISLITE JE REALNOST</p>
+        </div>
+        <div id="footer-nav">
+            <img src="images/plus.png">
+            <a href="#">O KOMPANIJI</a>
+            <a href="#">DELATNOST</a>
+            <a href="#">KONTAKT</a>
+            <a href="#">DEMO</a>
+            <img src="images/plus.png">
+        </div>
+        <div id="footer-nav">
+            <img src="images/plus.png">
+            <p>PETAR OTOVIC 5460</p>
+            <img src="images/plus.png">
+        </div>
+    </div>
+</body>
+
+</html>
