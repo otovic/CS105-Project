@@ -1,34 +1,119 @@
 @media only screen and (max-width: 600px) {
+    #left-menu {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
     
-}
+    #left-nav {
+        width: 90%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        box-sizing: border-box;
+        padding: 10px;
+        position: sticky;
+        top: 0px;
+    }
 
-@media only screen and (min-width: 601px) {
-    #headquarters {
-        width: 80%;
+    #left-nav > a {
+        text-decoration: none;
+    }
+
+    #middle-menu {
+        width: 90%;
+        height: auto;
+    }
+
+    #middle-top-content {
+        width: 100%;
         height: auto;
         box-sizing: border-box;
-        padding: 30px;
+        padding: 20px;
     }
 
-    #headquarters > img {
+    #middle-top-content > img {
         width: 100%;
         aspect-ratio: 1/0.5;
-        border-radius: 20px;
     }
 
-    #headquarters > p {
-        font-size: 40px;
-        margin-left: 20px;
-        margin-bottom: 10px;
-        margin: 0px;
-        font-weight: bold;
+    #middle-top-content > p {
+        white-space: break-spaces;
     }
 
-    #content-container {
+    #dodatni-deo {
         width: 100%;
+        height: auto;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        white-space: break-spaces;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    #left-menu {
+        width: 30%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+    
+    #left-nav {
+        width: 90%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        box-sizing: border-box;
+        padding: 10px;
+        position: sticky;
+        top: 0px;
+    }
+
+    #left-nav > a {
+        text-decoration: none;
+    }
+
+    #middle-menu {
+        width: 70%;
+        height: auto;
+    }
+
+    #middle-top-content {
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+
+    #middle-top-content > img {
+        width: 100%;
+        aspect-ratio: 1/0.5;
+    }
+
+    #middle-top-content > p {
+        white-space: break-spaces;
+    }
+
+    #dodatni-deo {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        white-space: break-spaces;
     }
 }

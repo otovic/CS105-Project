@@ -6,10 +6,12 @@
     <link rel="stylesheet" type="text/css" href="style/product.css">
     <link rel="stylesheet" type="text/css" href="style/footer.css">
     <link rel="stylesheet" type="text/css" href="style/loader.css">
+    <link rel="stylesheet" type="text/css" href="style/newsletter.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="toggle-menu.js"></script>
     <script src="header.js"></script>
     <script src="products.js"></script>
+    <script src="newsletter.js"></script>
 </head>
 
 <body onload="addStickyListener();readProducts();">
@@ -34,7 +36,7 @@
         </div>
     </header>
     <div id="banner">
-        <p>NARUCIVANJE</p>
+        <p>NEWSLETTER</p>
         <div id="categories">
             <a href="index.html">
                 <div class="category">
@@ -69,7 +71,12 @@
         </div>
     </div>
     <div id="content">
-        
+        <div id="newsletter-container">
+            <h1>PRIJAVITE SE NA NAS NEWSLETTER</h1>
+            <p>Prijavite se na nas newsletter kako bi dobijali obavestenja putem mjela o specijalnim ponudama i popustima na nase proizvode.</p>
+            <input type="text" id="newsletter-input">
+            <button id="prijava" onclick="checkEmail()">PRIJAVI SE</button>
+        </div>
     </div>
     <div id="footer">
         <div id="footer-message">
