@@ -1,4 +1,4 @@
 function setInitialValues() {
     let category = localStorage.getItem('category')
-    if(!category) localStorage.setItem('category', '1')
+    if(!category) localStorage.setItem('category', '0')
 }

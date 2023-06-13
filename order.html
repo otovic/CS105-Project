@@ -6,14 +6,19 @@
     <link rel="stylesheet" type="text/css" href="style/product.css">
     <link rel="stylesheet" type="text/css" href="style/footer.css">
     <link rel="stylesheet" type="text/css" href="style/loader.css">
+    <link rel="stylesheet" type="text/css" href="style/ourteam.css">
+    <link rel="stylesheet" type="text/css" href="style/delatnost.css">
+    <link rel="stylesheet" type="text/css" href="style/ordering.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
     <script src="toggle-menu.js"></script>
     <script src="header.js"></script>
     <script src="products.js"></script>
     <script src="initial-setup.js"></script>
+    <script src="employee.js"></script>
 </head>
 
-<body onload="addStickyListener();readProducts();setInitialValues();">
+<body onload="addStickyListener();loadProduct();">
     <div id="mobile-menu-closed">
         <img src="images/x.png" onclick="toggleMenu()">
         <a href="index.html" class="linkm" onclick="changeCategory(1)">MUSKARCI</a>
@@ -35,9 +40,9 @@
         </div>
     </header>
     <div id="banner">
-        <p>PROIZVEDENO U SRBIJI</p>
+        <p>PORUCIVANJE</p>
         <div id="categories">
-            <a href="index.html" onclick="changeCategory('0')">
+            <a href="index.html">
                 <div class="category">
                     <p>PRODAVNICA</p>
                 </div>
@@ -70,11 +75,12 @@
         </div>
     </div>
     <div id="content">
-        <div id="products">
-            <div id="loader-container">
-                <div id="loader">
+        <div id="product-info">
+            <div id="product-image">
 
-                </div>
+            </div>
+            <div id="product-data">
+
             </div>
         </div>
     </div>

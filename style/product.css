@@ -11,9 +11,15 @@
         gap: 4vw;
     }
 
-    .product {
+    #products > a {
         width: 45%;
+        text-decoration: none;
+    }
+
+    .product {
+        width: 100%;
         aspect-ratio: 1/1.5;
+        min-height: 350px;
         background-color: rgb(255, 255, 255);
         position: relative;
         border: 2px solid transparent;

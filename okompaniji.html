@@ -14,9 +14,9 @@
 <body onload="addStickyListener();">
     <div id="mobile-menu-closed">
         <img src="images/x.png" onclick="toggleMenu()">
-        <a href="#" class="linkm">MUSKARCI</a>
-        <a href="#" class="linkm">ZENE</a>
-        <a href="#" class="linkm">DECA</a>
+        <a href="index.html" class="linkm" onclick="changeCategory(1)">MUSKARCI</a>
+        <a href="index.html" class="linkm" onclick="changeCategory(2)">ZENE</a>
+        <a href="index.html" class="linkm" onclick="changeCategory(3)">DECA</a>
     </div>
     <header id="main-header">
         <div id="header-left">
@@ -26,18 +26,18 @@
             <img src="images/logo.png" id="main-logo">
         </div>
         <div id="header-right">
-            <a href="#" class="link">MUSKARCI</a>
-            <a href="#" class="link">ZENE</a>
-            <a href="#" class="link">DECA</a>
+            <a href="index.html" class="link" onclick="changeCategory(1)">MUSKARCI</a>
+            <a href="index.html" class="link" onclick="changeCategory(2)">ZENE</a>
+            <a href="index.html" class="link" onclick="changeCategory(3)">DECA</a>
             <img src="images/menu.png" id="mobile-nav" onclick="toggleMenu()">
         </div>
     </header>
     <div id="content">
         <div id="left-menu">
             <div id="left-nav">
-                <a href="index.html">
+                <a href="index.html" onclick="changeCategory('0')">
                     <div class="category">
-                        <p>POCETNA</p>
+                        <p>PRODAVNICA</p>
                     </div>
                 </a>
                 <a href="okompaniji.html">
@@ -108,10 +108,10 @@ Srdačan pozdrav,
         </div>
         <div id="footer-nav">
             <img src="images/plus.png">
-            <a href="#">O KOMPANIJI</a>
-            <a href="#">DELATNOST</a>
-            <a href="#">KONTAKT</a>
-            <a href="#">DEMO</a>
+            <a href="okompaniji.html">O KOMPANIJI</a>
+            <a href="delatnost.html">DELATNOST</a>
+            <a href="kontakt.html">KONTAKT</a>
+            <a href="demo.html">DEMO</a>
             <img src="images/plus.png">
         </div>
         <div id="footer-nav">
